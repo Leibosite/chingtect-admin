@@ -1,0 +1,15 @@
+@import "froala_editor.min";
+@import "froala_style.min";
+@import "font-awesome";
+
+li .pjax i{
+  padding-right: 8px;
+}
+
+.froala-editor{
+  border:solid 1px #ccc;
+}
+
+.froala-wrapper.f-basic{
+  border: solid 1px #ccc;
+}

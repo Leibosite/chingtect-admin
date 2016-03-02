@@ -1,0 +1,22 @@
+.panel.panel-default
+  .panel-heading
+    h4 邀请一个新成员
+  .panel-body
+    = form_for(@member, :html => { :class => "form" }) do |f|
+      - unless @member.errors.empty? && @user.errors.empty?
+        #errorExplanation.group
+          ul
+            = @member.errors.full_messages.uniq.inject(''){|str, msg| str << "<li> #{msg}"}.html_safe
+            = @user.errors.full_messages.uniq.inject(''){|str, msg| str << "<li> #{msg}"}.html_safe
+      = fields_for( :user ) do |w|
+        .form-group
+          = w.label :email
+          = w.email_field :email, autofocus: true, :class => "form-control"
+          span.description Ex. test@example.com; must be unique
+      .form-group
+        = f.label :姓名
+        = f.text_field :first_name, :class => "form-control"
+      .form-group
+        = f.label :称谓
+        = f.text_field :last_name, :class => "form-control"
+      =f.submit t('.create_user_and_invite', :default => "创建一个会员并且发送邮件邀请他"), :class => "btn btn-primary"

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  limit: MyText
+  normative: MyText
+  termDefinition: MyText
+  elementSetExp: MyText
+  metadataStructure: MyText
+  version: MyString
+  state: 1
+  annotation: MyString
+  releaseDate: 2016-01-15 11:18:46
+  SpecCategory_id: 
+
+two:
+  name: MyString
+  limit: MyText
+  normative: MyText
+  termDefinition: MyText
+  elementSetExp: MyText
+  metadataStructure: MyText
+  version: MyString
+  state: 1
+  annotation: MyString
+  releaseDate: 2016-01-15 11:18:46
+  SpecCategory_id: 

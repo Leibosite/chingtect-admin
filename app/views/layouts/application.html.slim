@@ -1,0 +1,17 @@
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title= @org_name
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tag
+  body
+    #nav.navbar.navbar-default
+      = yield :navbar
+    .intro-header
+      .container
+        .row
+          .col-lg-12
+              = yield :flash
+    footer
+      = yield :footer

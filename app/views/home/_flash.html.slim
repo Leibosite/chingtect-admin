@@ -1,0 +1,10 @@
+.flash
+  - flash.each do |type, message|
+    h3= message
+    hr.intro-divider
+  - flash.clear
+.flash
+  - flash.each do |type, message|
+    div class=("message #{type}") 
+      p= message
+  - flash.clear

@@ -1,0 +1,16 @@
+.navbar-header
+  a.navbar-brand href="/home/index"
+    = @org_name
+ul.nav.navbar-nav.navbar-right
+  li
+    - if user_signed_in?
+      = link_to( t("web-app-theme.invite", :default => "会员邀请"), new_member_path )
+    - else
+      = link_to( t("web-app-theme.signup", :default => "注册"), new_user_registration_path )
+  li
+    - if user_signed_in?
+      = link_to( t("web-app-theme.logout", :default => "退出"), destroy_user_session_path, :method => :delete )
+    - else
+      = link_to( t("web-app-theme.login", :default => "登录"), new_user_session_path )
+  li
+    a href="/admin" = t("web-app-theme.settings", :default => "控制面板")

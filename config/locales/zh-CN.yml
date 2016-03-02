@@ -1,0 +1,522 @@
+zh-CN:
+  enumerize:
+    permission:
+      action:
+        manage: "管理"
+        read: "只读"
+        access: "访问"
+        edit: "编辑"
+  date:
+    abbr_day_names:
+    - 周日
+    - 周一
+    - 周二
+    - 周三
+    - 周四
+    - 周五
+    - 周六
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 星期日
+    - 星期一
+    - 星期二
+    - 星期三
+    - 星期四
+    - 星期五
+    - 星期六
+    formats:
+      default: "%Y-%m-%d"
+      long: "%Y年%b%d日"
+      short: "%b%d日"
+    month_names:
+    -
+    - 一月
+    - 二月
+    - 三月
+    - 四月
+    - 五月
+    - 六月
+    - 七月
+    - 八月
+    - 九月
+    - 十月
+    - 十一月
+    - 十二月
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 大约一小时
+        other: 大约 %{count} 小时
+      about_x_months:
+        one: 大约一个月
+        other: 大约 %{count} 个月
+      about_x_years:
+        one: 大约一年
+        other: 大约 %{count} 年
+      almost_x_years:
+        one: 接近一年
+        other: 接近 %{count} 年
+      half_a_minute: 半分钟
+      less_than_x_minutes:
+        one: 不到一分钟
+        other: 不到 %{count} 分钟
+      less_than_x_seconds:
+        one: 不到一秒
+        other: 不到 %{count} 秒
+      over_x_years:
+        one: 一年多
+        other: "%{count} 年多"
+      x_days:
+        one: 一天
+        other: "%{count} 天"
+      x_minutes:
+        one: 一分钟
+        other: "%{count} 分钟"
+      x_months:
+        one: 一个月
+        other: "%{count} 个月"
+      x_seconds:
+        one: 一秒
+        other: "%{count} 秒"
+    prompts:
+      day: 日
+      hour: 时
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+  errors:
+    format: "%{attribute}%{message}"
+    messages:
+      accepted: 必须是可被接受的
+      blank: 不能为空字符
+      present: 必须是空白
+      confirmation: 与确认值不匹配
+      empty: 不能留空
+      equal_to: 必须等于 %{count}
+      even: 必须为双数
+      exclusion: 是保留关键字
+      greater_than: 必须大于 %{count}
+      greater_than_or_equal_to: 必须大于或等于 %{count}
+      inclusion: 不包含于列表中
+      invalid: 是无效的
+      less_than: 必须小于 %{count}
+      less_than_or_equal_to: 必须小于或等于 %{count}
+      not_a_number: 不是数字
+      not_an_integer: 必须是整数
+      odd: 必须为单数
+      record_invalid: '验证失败: %{errors}'
+      restrict_dependent_destroy:
+        has_one: 由于 %{record} 需要此记录，所以无法移除记录
+        has_many: 由于 %{record} 需要此记录，所以无法移除记录
+      taken: 已经被使用
+      too_long:
+        one: 过长（最长为一个字符）
+        other: 过长（最长为 %{count} 个字符）
+      too_short:
+        one: 过短（最短为一个字符）
+        other: 过短（最短为 %{count} 个字符）
+      wrong_length:
+        one: 长度非法（必须为一个字符）
+        other: 长度非法（必须为 %{count} 个字符）
+      other_than: 长度非法（不可为 %{count} 个字符
+    template:
+      body: 如下字段出现错误：
+      header:
+        one: 有 1 个错误发生导致「%{model}」无法被保存。
+        other: 有 %{count} 个错误发生导致「%{model}」无法被保存。
+  helpers:
+    select:
+      prompt: 请选择
+    submit:
+      create: 新增%{model}
+      submit: 储存%{model}
+      update: 更新%{model}
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u %n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: CN¥
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: 十亿
+          million: 百万
+          quadrillion: 千兆
+          thousand: 千
+          trillion: 兆
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ", 和 "
+      two_words_connector: " 和 "
+      words_connector: ", "
+  time:
+    am: 上午
+    formats:
+      default: "%Y年%b%d日 %A %H:%M:%S %Z"
+      long: "%Y年%b%d日 %H:%M"
+      short: "%b%d日 %H:%M"
+    pm: 下午
+  activerecord:
+    models:
+      user: "用户"
+      member: "成员"
+      permission: "权限"
+      tenant: "工作组"
+      post: "新闻"
+      role: "角色"
+      version: "操作记录"
+      element: "元素"
+      encoding_scheme: "编码体系修饰词"
+      refined_by: "元素修饰词"
+      spec: "规范"
+      spec_category: "规范分类"
+      element_attribute: "元素属性"
+      template_element_category: "模板元素分类"
+      template_element: "模板元素"
+      template_refined_by: "模板元素修饰词"
+      template_encoding_scheme: "模板编码体系修饰词"
+    attributes:
+      version:
+        id: "编号"
+        event: "事件类型"
+        whounnit: "操作者"
+      user:
+        email: "Email"
+        id: "编号"
+      role:
+        name: "角色名称"
+        id: "编号"
+        members: "所有成员"
+      member:
+        first_name: "姓名"
+        last_name: "称谓"
+        user: "所属用户"
+        tenant: "工作组"
+        roles: "角色"
+      element:
+        name: "名称"
+        eName: "英文名称"
+        id: "编号"
+        definition: "定义"
+        definedBy: "出处"
+        label: "标签"
+        language: "语言"
+        occurence: "频次范围"
+        keyWords: "关键字"
+        version: "版本"
+        identifier: "标识符"
+        spec: "规范"
+        encodingScheme: "编码体系修饰词"
+        created_at: "创建于"
+        updated_at: "更新于"
+      refined_by:
+        name: "名称"
+        eName: "英文名称"
+        id: "编号"
+        definition: "定义"
+        identifier: "标识符"
+        definedBy: "出处"
+        label: "标签"
+        language: "语言"
+        occurence: "频次范围"
+        keyWords: "关键字"
+        version: "版本"
+        spec: "规范"
+        encodingScheme: "编码体系修饰词"
+        element: "元素"
+        created_at: "创建于"
+        updated_at: "更新于"
+      encoding_scheme:
+        name: "名称"
+        eName: "英文名称"
+        id: "编号"
+        definition: "定义"
+        identifier: "标识符"
+        definedBy: "出处"
+        label: "标签"
+        language: "语言"
+        occurence: "频次范围"
+        keyWords: "关键字"
+        version: "版本"
+        spec: "规范"
+        created_at: "创建于"
+        updated_at: "更新于"
+      spec:
+        id: "编号"
+        name: "名称"
+        limit: "使用范围"
+        normative: "规范性应用文件"
+        termdefinition: "术语和定义"
+        elementsetexp: "元素集说明"
+        metadatastructure: "元数据的内容结构"
+        version: "版本号"
+        state: "状态"
+        annotation: "审核批注"
+        releasedate: "规范发布日期"
+        specCategory: "规范分类"
+        created_at: "创建于"
+        updated_at: "更新于"
+      spec_category:
+        id: "编号"
+        name: "名称"
+        detail: "描述"
+        created_at: "创建于"
+        updated_at: "更新于"
+      element_attribute:
+        id: "编号"
+        name: "名称"
+        definition: "定义"
+        constraint: "约束"
+        created_at: "创建于"
+        updated_at: "更新于"
+      template_element_category:
+        id: "编号"
+        name: "名称"
+        detail: "描述"
+        version: "版本号"
+        state: "状态"
+        annotion: "审核批注"
+        created_at: "创建于"
+        updated_at: "更新于"
+      template_element:
+        name: "名称"
+        eName: "英文名称"
+        id: "编号"
+        definition: "定义"
+        definedBy: "出处"
+        label: "标签"
+        language: "语言"
+        occurence: "频次范围"
+        keyWords: "关键字"
+        version: "版本"
+        identifier: "标识符"
+        templateElementCategory: "模板元素分类"
+        templateEncodingScheme: "模板编码体系修饰词"
+        created_at: "创建于"
+        updated_at: "更新于"
+      template_refined_by:
+        name: "名称"
+        eName: "英文名称"
+        id: "编号"
+        definition: "定义"
+        definedBy: "出处"
+        label: "标签"
+        language: "语言"
+        occurence: "频次范围"
+        keyWords: "关键字"
+        version: "版本"
+        identifier: "标识符"
+        templateElementCategory: "模板元素分类"
+        templateEncodingScheme: "模板编码体系修饰词"
+        templateElement: "模板元素"
+        created_at: "创建于"
+        updated_at: "更新于"
+      template_encoding_scheme:
+        name: "名称"
+        eName: "英文名称"
+        id: "编号"
+        definition: "定义"
+        definedBy: "出处"
+        label: "标签"
+        language: "语言"
+        occurence: "频次范围"
+        keyWords: "关键字"
+        version: "版本"
+        identifier: "标识符"
+        templateElementCategory: "模板元素分类"
+        created_at: "创建于"
+        updated_at: "更新于"
+  admin:
+    history_rollback:
+      table_headers:
+        field: "操作字段"
+        changes: "变更内容"
+    settings:
+      label: "设置"
+    actions:
+      import:
+        menu: "导入"
+        title: "导入"
+        breadcrumb: "导入"
+      grid:
+        menu: "平铺"
+        title: "平铺"
+        breadcrumb: "列表"
+      bulk_delete:
+        breadcrumb: "删除多个条目"
+        bulk_link: "删除选中的 %{model_label_plural}"
+        menu: "删除多个条目"
+        title: "删除 %{model_label_plural}"
+      dashboard:
+        breadcrumb: "控制面板"
+        menu: "控制面板"
+        title: "站点管理"
+      delete:
+        breadcrumb: "删除"
+        done: "已删除"
+        link: "删除 '%{object_label}'"
+        menu: "删除"
+        title: "删除 %{model_label} '%{object_label}'"
+      edit:
+        breadcrumb: "编辑"
+        done: "已更新"
+        link: "编辑这个 %{model_label}"
+        menu: "编辑"
+        title: "编辑 %{model_label} '%{object_label}'"
+      export:
+        breadcrumb: "导出"
+        bulk_link: "导出选中的 %{model_label_plural}"
+        done: "已导出"
+        link: "导出找到的 %{model_label_plural}"
+        menu: "导出"
+        title: "导出%{model_label_plural}"
+      history_index:
+        breadcrumb: "操作历史"
+        menu: "操作历史"
+        title: "%{model_label_plural} 的操作历史"
+      history_show:
+        breadcrumb: "操作历史"
+        menu: "操作历史"
+        title: "%{model_label} '%{object_label}' 的操作历史"
+      index:
+        breadcrumb: "%{model_label_plural}"
+        menu: "列表"
+        title: "%{model_label_plural}列表"
+      new:
+        breadcrumb: "新建"
+        done: "已创建"
+        link: "新建%{model_label}"
+        menu: "创建新条目"
+        title: "新建%{model_label}"
+      show:
+        breadcrumb: "%{object_label}"
+        menu: "详情"
+        title: "%{model_label} '%{object_label}'详情"
+      show_in_app:
+        menu: "在应用程序中显示"
+    export:
+      click_to_reverse_selection: "单击以反向选择"
+      confirmation: "以 %{name} 格式导出"
+      csv:
+        col_sep: "栏分隔符"
+        col_sep_help: "留空则使用默认值('%{value}')"
+        default_col_sep: ","
+        encoding_to: "编码"
+        encoding_to_help: "选择输出字符编码。留空则保留当前输入字符编码：(%{name})"
+        header_for_association_methods: "%{name} [%{association}]"
+        header_for_root_methods: "%{name}"
+        skip_header: "无表头"
+        skip_header_help: "不输出表头（即无栏目描述）"
+      display: "显示%{name}: %{type}"
+      empty_value_for_associated_objects: "<空>"
+      fields_from: "%{name} 中的字段"
+      fields_from_associated: "关联的 %{name} 中的字段"
+      options_for: "%{name} 格式选项"
+      select: "选择要导出的字段"
+    flash:
+      error: "%{name} 不能被 %{action}"
+      model_not_found: "找不到模型’%{model}'"
+      noaction: "什么也没做"
+      object_not_found: "找不到序号为'%{id}'的模型%{model}"
+      successful: "成功 %{action} 了 %{name} "
+    form:
+      all_of_the_following_related_items_will_be_deleted: "下列相关条目将被删除或成为孤立条目"
+      are_you_sure_you_want_to_delete_the_object: "确认要删除这个 %{model_name} 么？"
+      basic_info: "基本信息"
+      bulk_delete: "下列对象将被删除，相关对象将被删除或成为孤立条目"
+      cancel: "取消"
+      char_length_of: "长度"
+      char_length_up_to: "最长"
+      confirmation: "是"
+      new_model: "%{name}（新）"
+      one_char: "字符"
+      optional: "可选"
+      required: "必填"
+      save: "保存"
+      save_and_add_another: "保存并新建另一个"
+      save_and_edit: "保存并继续编辑"
+    misc:
+      add_filter: "增加过滤条件"
+      add_new: "新建"
+      ago: "之前"
+      bulk_menu_title: "选中的条目"
+      chose_all: "全选"
+      chosen: "选择了%{name}"
+      clear_all: "全不选"
+      down: "下"
+      filter: "过滤条件"
+      filter_date_format: "月/日/年"
+      log_out: "注销"
+      navigation: "导航"
+      refresh: "刷新"
+      remove: "移除"
+      search: "搜索"
+      show_all: "显示全部"
+      up: "上"
+    table_headers:
+      changes: "改动"
+      created_at: "日期/时间"
+      item: "条目"
+      last_used: "最近使用"
+      message: "消息"
+      model_name: "模块名称"
+      records: "记录"
+      username: "用户"
+    home:
+      name: "主页"
+    pagination:
+      next: "后一页 &raquo;"
+      previous: "&laquo; 前一页"
+      truncate: "……"
